@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useChatStore } from "../../store/useChatStore";
-import SidebarSkeleton from "../skeletons/SidebarSkeleton";
+import SidebarSkeleton from "../Skeletons/SidebarSkeleton";
 import { Users } from "lucide-react";
 import { useAuthStore } from "../../store/useAuthStore";
 // import { useNavigate } from "react-router-dom";
