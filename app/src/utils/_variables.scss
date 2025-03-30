@@ -1,0 +1,104 @@
+// Primary Palette
+$chili-red: #c21807;
+$ferrari: #ff2800;
+$apple: #a91b0d;
+$primary-color: #3498db;
+$true-blue: #0073cf;
+$navy: #0a1172;
+$sky: #63c5da;
+$cyan: #00ffff;
+$secondary-color: #2ecc71;
+$star-bucks: #006241;
+$medium-sea: #3cb371;
+$jungle-green: #29ab87;
+$tertiary-color: #f1c40f;
+$flax: #eedc82;
+$school-bus: #ffd800;
+$lemon: #fff700;
+$pastel-yellow: #fdfd96;
+
+// Neutral Palette
+$black: #000;
+$mid-night: #040406;
+$electric-basic: #292929;
+$spider: #040200;
+$white: #fff;
+$snow-drift: #f8fbf8;
+$rice: #faf5ef;
+$milk: #fdfff5;
+$frost: #f4f8ff;
+$gray-light: #ecf0f1;
+$gray: #bdc3c7;
+$gray-dark: #7f8c8d;
+
+// Feedback Colors
+$success-color: #2ecc71;
+$warning-color: #e67e22;
+$error-color: #e74c3c;
+$info-color: #3498db;
+
+// Font Families
+$font-family-base: 'Arial', sans-serif;
+$font-family-heading: 'Roboto', sans-serif;
+
+// Font Sizes
+$font-size-small: 0.875rem; // 14px
+$font-size-base: 1rem;      // 16px
+$font-size-large: 1.25rem;  // 20px
+$font-size-heading: 2rem;   // 32px
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Line Heights
+$line-height-base: 1.5;
+$line-height-heading: 1.2;
+
+// Letter Spacing
+$letter-spacing-tight: -0.5px;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 1px;
+
+// Spacing (Padding/Margin)
+$space-xxs: 4px;
+$space-xs: 8px;
+$space-sm: 16px;
+$space-md: 24px;
+$space-lg: 32px;
+$space-xl: 48px;
+$space-xxl: 64px;
+
+// Border Radius
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 17px;
+$border-radius-full: 100%; // For pills/circles
+
+
+// Container Widths
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+
+// Margins
+$margin-small: 8px;
+$margin-base: 16px;
+$margin-large: 24px;
+
+// Padding
+$padding-small: 8px;
+$padding-base: 16px;
+$padding-large: 24px;
+
+// Box Shadow
+$box-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+$box-shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+$box-shadow-heavy: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+// Transitions
+$transition-fast: 0.2s ease-in-out;
+$transition-normal: 0.3s ease-in-out;
+$transition-slow: 0.5s ease-in-out;

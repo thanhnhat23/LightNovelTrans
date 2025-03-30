@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "NekoFont";
+    src: url("/fonts/Quicksand-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "NekoFont";
+    src: url("/fonts/Quicksand-Regular.ttf") format("truetype");
+  }
+}
+
+@layer utilities {
+  input::-ms-reveal,
+  input::-ms-clear {
+    display: none;
+  }
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

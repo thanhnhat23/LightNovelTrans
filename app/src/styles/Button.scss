@@ -1,0 +1,21 @@
+@use '../utils/buttons' as btn;
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+.submit {
+    @include btn.button_2(var.$primary-color, var.$true-blue, 100%, 40px, 3px)
+}
+
+.editProfile {
+    @include btn.button_2(var.$primary-color, var.$true-blue, 35%, 35px, 15px);
+    @include mix.breakpoint(small) {
+        @include btn.button_2(var.$primary-color, var.$true-blue, 30%, 30px, 15px);
+    }
+}
+
+.close {
+    @include btn.button_2(var.$primary-color, var.$true-blue, 35px, 35px, 100%);
+    @include mix.breakpoint(small) {
+        @include btn.button_2(var.$primary-color, var.$true-blue, 32px, 32px, 100%);
+    }
+}

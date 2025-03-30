@@ -1,0 +1,75 @@
+/* Can giua */
+@mixin grid-center {
+    display: grid;
+    place-items: center;
+}
+
+@mixin absolute-center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+
+@mixin center($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+/* Tao mau khi hover */
+@mixin lighten-or-darken($color, $amount) {
+    background-color: lighten($color, $amount);
+    &:hover {
+      background-color: darken($color, $amount);
+    }
+}
+
+button {
+    @include lighten-or-darken(#3498db, 10%);
+}
+
+/* Responsive */
+@mixin responsive-font($min-size, $max-size) {
+    font-size: calc(#{$min-size} + (#{strip-units($max-size) - strip-units($min-size)} * (100vw - 320px) / 680));
+}
+/* Kích thước chữ sẽ tự động thay đổi giữa 16px và 32px, tùy thuộc vào độ rộng màn hình */
+@mixin res($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/* Layout grid */
+@mixin grid($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+/* Chia container thành 4 cột, với khoảng cách giữa các cột là 20px. */
+
+/* Breakpoints */
+@mixin breakpoint($size) {
+    @if $size == small {
+      @media (max-width: 576px) { @content; }
+    } @else if $size == medium {
+      @media (max-width: 768px) { @content; }
+    } @else if $size == large {
+      @media (max-width: 992px) { @content; }
+    } @else if $size == xlarge {
+      @media (max-width: 1200px) { @content; }
+    }
+}
+/* Giao diện thích ứng với nhiều kích thước màn hình */
+
+/* Animation */
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+    transition: $property $duration $timing;
+}
+
+
+
+  
+  
+  
+  
+  
