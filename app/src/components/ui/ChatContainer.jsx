@@ -74,7 +74,7 @@ const ChatContainer = () => {
                 {moment(message.createdAt).calendar()}
               </time>
             </div>
-            <div className="chat-bubble flex flex-col bg-black/85 font-medium rounded-lg">
+            <div className="chat-bubble flex flex-col bg-black/85 font-medium rounded-lg text-white">
               {message.image && (
                 <img
                   src={message.image}
