@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { usePostStore } from "../store/usePostStore";
+import { useAuthStore } from "../store/useAuthStore";
 import { ArrowBigLeft, ArrowBigRight, House } from "lucide-react";
 import CommentInput from "../components/ui/CommentInput";
 import CommentContainer from "../components/ui/CommentContainer";
@@ -9,6 +10,7 @@ import Menu from "../components/layout/Menu";
 const ChapterByIdPage = () => {
   const { id, chapterId } = useParams();
   const { chapter, getChapters, comment, getComment, post } = usePostStore();
+  const { authUser } = useAuthStore();
   const [isNextIndex, setIsNextIndex] = useState(true);
   const [isPrevIndex, setIsPrevIndex] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(-1);
@@ -78,14 +80,27 @@ const ChapterByIdPage = () => {
             </h1>
           </div>
           <div className="flex flex-col w-full max-h-[60rem] overflow-auto">
-            <CommentInput
-              id={id}
-              chapterId={chapterId}
-            />
-            <CommentContainer
-              id={id}
-              chapterId={chapterId}
-            />
+            {authUser && (
+              <>
+                <CommentInput id={id} chapterId={chapterId} />
+                <CommentContainer id={id} chapterId={chapterId} />
+              </>
+            )}
+            {!authUser && (
+              <>
+                <h1 className="text-lg font-semibold text-black flex justify-center items-center mt-5">
+                  Please
+                  <a
+                    href="/login"
+                    className="text-blue-500 hover:text-blue-600 ml-1 mr-1"
+                  >
+                    login
+                  </a>
+                  to comment
+                </h1>
+                <CommentContainer id={id} chapterId={chapterId} />
+              </>
+            )}
           </div>
         </div>
       </div>
