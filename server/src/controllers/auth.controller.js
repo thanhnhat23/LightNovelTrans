@@ -41,7 +41,6 @@ export const signup = async (req, res) => {
       email,
       userName,
       password: hashedPassword,
-      nameTag
     });
 
     if (newUser) {
