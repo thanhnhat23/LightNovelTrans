@@ -27,7 +27,7 @@ router.post(
   createChapter
 );
 router.post("/:id/chapter/:chapterId/comment", protectRoute, createComments);
-router.get("/:id/chapter/:chapterId/comment", protectRoute, getComments);
+router.get("/:id/chapter/:chapterId/comment", getComments);
 router.delete("/:id/chapter/:chapterId", protectRoute, deleteChapter);
 
 export default router;
