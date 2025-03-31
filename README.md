@@ -1,25 +1,41 @@
 # ✨ LIGHT NOVEL TRANSLATE ✨
-<h3> Introduction: <br /> </h1>
-This website is a place for translators to post their translations of light novels or web novels. I hope readers can enjoy the translations here. <br />
-Here is my web: [Neko Nora 🐈‍⬛](https://nekonora.onrender.com/)
+<h3> Introduction: </h3>
+
+This website is a place for translators to post their translations of light novels or web novels. I hope readers can enjoy the translations here.
+Here is my web: 
+
+[Neko Nora 🐈‍⬛](https://nekonora.onrender.com/)
 
 <h3> Highlights: </h3>
-🌟 Tech stack:  <br />
+
+🌟 Tech stack:
+
 🎨 FrontEnd:
+
 <p> 
   <img src="https://skillicons.dev/icons?i=vite,react,sass,tailwind,js" height="40"/>
 </p>
+
 🚀 BackEnd:
+
 <p> 
   <img src="https://skillicons.dev/icons?i=express,mongodb,nodejs,js," height="40"/>
 </p>
-🎃 Authentication && Authorization with JWT <br />
-👾 Real-time messaging with Socket.io <br />
-🚀 Online user status <br />
-👌 Global state management with Zustand <br />
-💬 Convert word to html with Mammoth <br />
-🗺️ Store images with cloudinary <br />
+
+🎃 Authentication && Authorization with JWT
+
+👾 Real-time messaging with Socket.io
+
+🚀 Online user status
+
+👌 Global state management with Zustand
+
+💬 Convert word to html with Mammoth
+
+🗺️ Store images with cloudinary
+
 💫 Some effects, layout and icons with Swiper, Motion, Daisy UI, Ant design, Lucide react
+
 
 # ✨ If you want to clone code here are some things to setup 🐈‍⬛
 ### Setup .env file
