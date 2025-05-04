@@ -6,7 +6,7 @@ const Menu = ({ nextIndex, prevIndex, id, isNextIndex, isPrevIndex }) => {
       <li>
         <a
           href={`/post/${id}/chapter/${prevIndex}`}
-          className={`${isNextIndex && "hidden"}`}
+          className={`${isPrevIndex && "hidden"}`}
         >
           <ArrowBigLeft />
         </a>
@@ -19,7 +19,7 @@ const Menu = ({ nextIndex, prevIndex, id, isNextIndex, isPrevIndex }) => {
       <li>
         <a
           href={`/post/${id}/chapter/${nextIndex}`}
-          className={`${isPrevIndex && "hidden"}`}
+          className={`${isNextIndex && "hidden"}`}
         >
           <ArrowBigRight />
         </a>
